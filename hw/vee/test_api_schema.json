@@ -1,0 +1,5 @@
+{'struct':'UserDefOne','data': {'integer':'int','*string':'str','*flag':'bool'} }
+
+{'command':'my-command'}
+
+{'event':'MY_EVENT'}

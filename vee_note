@@ -1,0 +1,35 @@
+edit files:
+qapi/misc.json              add command hello-world
+monitor/qmp-cmds.c          add command hello-world handler
+
+qapi files:
+hw/vee/vee-qapi-scheam.json
+
+linux make cmd:
+make qemu-system-arm
+win make cmd:
+make qemu-system-arm.exe
+
+qapi generate:
+python3 scripts/qapi-gen.py --output-dir="hw/vee" --prefix="vee-" --suppress-tracing hw/vee/vee-qapi-schema.json
+
+vee files prefix:
+vee_ vee-
+
+use 'ctrl a h' to show help while app start
+
+vee device in qom: /machine/peripheral
+
+hmp cmd:
+qom-list path -- list QOM properties
+
+test qmp cmd:
+{ "execute": "qmp_capabilities" }
+{ "execute": "vee-command" }
+{ "execute": "vee-get-vm-time-us" }
+{ "execute": "vee-vm-feed", "arguments": { "count": 2 } }
+{ "execute": "vee-ssd1306-get-pixel", "arguments": { "path": "/machine/peripheral/vee-display0"} }
+{ "execute": "cont" }
+{ "execute": "stop" }
+{ "execute": "query-cpus-fast" }
+{ "execute": "quit"}

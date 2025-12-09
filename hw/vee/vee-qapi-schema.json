@@ -1,0 +1,46 @@
+{ 'command': 'vee-command' }
+
+{
+    'struct': 'QmpVeeSSD1306Pixel',
+    'data': {
+        'width': 'int',
+        'height': 'int',
+        'pixel': ['int']
+    }
+}
+
+{
+    'command': 'vee-ssd1306-get-pixel',
+    'data': {
+        'path': 'str'
+    },
+    'returns': 'QmpVeeSSD1306Pixel'
+}
+
+{
+    'command': 'vee-vm-feed',
+    'data': {
+        'count': 'int'
+    }
+}
+
+{
+    'struct': 'QmpVeeVmTimeUs',
+    'data': {
+        'time': 'int'
+    }
+}
+
+{
+    'command': 'vee-get-vm-time-us',
+    'returns': 'QmpVeeVmTimeUs'
+}
+
+{ 'event': 'VEE_EVENT' }
+
+{
+    'event': 'VEE_VM_FEED_TICK_EVENT',
+    'data': {
+        'time': 'int'
+    }
+}

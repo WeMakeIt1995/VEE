@@ -1,0 +1,49 @@
+/*
+ * VEE STM32F4XX HW INFO
+ *
+ * Copyright (c) 2025 Jiehan Guo <1003425554@qq.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+#ifndef HW_VEE_STM32F4XX_HW_INFO_H
+#define HW_VEE_STM32F4XX_HW_INFO_H
+
+#define STM_HW_PACKAG_PIN_64_GPIO_PORT_NUM      3
+
+#define STM_HW_GPIO_PINN        16
+
+#define STM32F405RG_PORTN       STM_HW_PACKAG_PIN_64_GPIO_PORT_NUM
+
+#define STM32F4XX_TIM_NUM       14
+#define STM32F4XX_I2C_NUM       3
+#define STM32F4XX_SPI_NUM       3
+#define STM32F4XX_I2S_NUM       3
+#define STM32F4XX_I2S_EXT_NUM   3
+#define STM32F4XX_USART_NUM     6
+#define STM32F4XX_CAN_NUM       2
+#define STM32F4XX_OTG_FS_NUM    1
+#define STM32F4XX_OTG_HS_NUM    1
+#define STM32F4XX_ETH_NUM       1
+#define STM32F4XX_FMC_NUM       1
+#define STM32F4XX_SDIO_NUM      1
+#define STM32F4XX_DCMI_NUM      1
+#define STM32F4XX_EVENTOUT_NUM  1
+
+#endif
