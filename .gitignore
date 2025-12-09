@@ -1,5 +1,7 @@
 /GNUmakefile
 /build/
+/vee-dist/
+/vee-test-kernel/
 /.cache/
 /.vscode/
 *.pyc
